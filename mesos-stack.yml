@@ -24,7 +24,7 @@ services:
     networks:
       - mesos
     environment:
-      - MESOS_CLUSTER=stream-juggler
+      - MESOS_CLUSTER=mesos-stack
       - MESOS_HOST=${HOST_IP:-0.0.0.0}
       - MESOS_PORT=5050
       - MESOS_ZK=zk://zookeeper:2181/mesos
